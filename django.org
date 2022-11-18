@@ -1,0 +1,17 @@
+* Introdução
+*** Criando um projeto Django
+***** Criando um Diretório de trabalho
+******* mkdir ~/workspace/projetos/nome-projeto
+******* cd ~/workspace/projetos/nome-projeto
+***** Versionando o projeto
+******* git init
+***** Criando um ambiente virtual
+******* python -m venv .venv
+***** Instalando as ferramentas necessárias
+******* pip install -U pip
+******* pip install Django
+******* pip freeze requirements.txt
+***** Criando a estrutura básica do projeto
+***** Subindo o projeto para a produção
+***** Estruturando um fluxo de trabalho adequando
+* Models

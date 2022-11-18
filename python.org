@@ -1,0 +1,57 @@
+* Tipos
+*** String
+***** str.capitalize()
+      Retorna uma *cópia* da string com o *primeiro* caractere em
+      *maiúsculo* e o restantente em *minúsculo*.
+***** str.center(width[,fillchar])
+      Retorna um texto *centralizado* em uma string de comprimento
+      *width*. O Preenchimento é feito usando o parâmetro *fillchar*
+      específicado (padrão é o caractere de espaço ASCII). A string
+      original é retornada se *width* é menor ou igual a **.
+***** str.count(sub[,start[,end]])
+      Retorna o número de ocorrências de sub-string *sub* que não se
+      sobrepõem no intervalo[start, end]. Argumentos opcionais *start* e
+      *end* são interpretados como na notação de fatias.
+***** str.endswith(suffix[,start[,end]])
+      Retorna *True* se a string terminar com o *suffix*, caso
+      contrário retorna *False*. O *suffix* também pode ser um *tupla*
+      de *sufixos* para procurar. Com o parâmetro opcional
+      *start*. começamos a testar a partir daquela posição. Com o
+      parâmetro opcional *end*, devemos parar de comparar na posição
+      especificada. 
+***** str.find(sub[,start[,end]])
+      Retorna o *indíce* mais baixo na string onde a substring *sub* é
+      encontrado dentro da fatia *s[start, end]*. Argumentos opcionais
+      como *start* e *end* são interpretados como na notação de
+      fatiamento. Retorna *-1* se *sub* não for localizado.
+******* Nota:
+	O método *find()* deve ser usado apenas se precisarmos conhecer
+	a posição de *sub*. Para verificar se sub é ou não uma
+	*substring*, use o operador *in*:
+	>>> 'Py' in 'Python'
+	>>> True
+***** str.format(*args, **kwargs)
+      Executa uma operação de formatação na string. A string na qual
+      este método é chamado pode conter texto literal ou campos para a
+      substituição delimitados por chaves {}. Cada campo de
+      substituição contém um índice numérico de um argumento
+      posicional ou o nome de um argumento nomeado. Retorna a cópia da
+      string onde cada campo para substituição com o valor da string
+      do argumento corresponde.
+
+      >>> "The sum of 1 + 2 is {0}".format(1+2)
+      'The sum of 1 + 2 is 3'
+***** str.index(sub[,start[,end]])
+      Semelhante a *find()*, mas levanta *ValueError* quando a
+      subtring não é encontrada.
+*** List
+*** Dict
+*** Fraction
+***** init
+      from fractions import Fraction
+      Fraction(numerator=0, denominator=1)
+      Fraction(other_fraction)
+      Fraction(float)
+      Fraction(decimal)
+      Fraction(string)
+
